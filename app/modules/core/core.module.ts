@@ -6,11 +6,12 @@ import { NgModule } from '@angular/core';
 
 // App
 import { PROVIDERS } from './services';
+import { PIPES } from '~/modules/core/pipes';
 
 @NgModule({
-  declarations: [],
+  declarations: [...PIPES],
   imports: [NativeScriptModule],
-  exports: [NativeScriptModule],
+  exports: [NativeScriptModule, ...PIPES],
   providers: [...PROVIDERS]
 })
 export class CoreModule {}

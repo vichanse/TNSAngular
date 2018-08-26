@@ -16,7 +16,7 @@ export class LogService {
     }
   }
 
-  public inspect(obj: any[]) {
+  public inspect(obj: any) {
     if (LogService.ENABLE) {
       console.log(obj);
       console.log('typeof: ', typeof obj);

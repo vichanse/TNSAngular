@@ -9,7 +9,7 @@ export class PlayerService {
   public tracks: Array<ITrack>;
 
   constructor() {
-    this.tracks = [];
+    this.tracks = [{ name: 'Guitar' }, { name: 'Piano' }];
   }
 
   public play(index: number): void {
